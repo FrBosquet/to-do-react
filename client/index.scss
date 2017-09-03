@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+
+$font: 'Comfortaa', monospace;
+$col-pri: rgb(231, 105, 85);
+$col-sec: rgb(125, 25, 9);
+
+
+.app{
+  width: 560px;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: $font;
+
+  .title{
+    color: $col-pri;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .todo-form{
+    width: 100%;
+    padding: 0;
+
+    input{
+      box-sizing: border-box;
+      border: 1px solid $col-sec;
+      border-right: none;
+      border-radius: 12px 0 0 12px;
+      height: 25px;
+      margin: 0;
+      padding: 10px;
+      width: calc( 100% - 50px );
+
+      &:focus{
+        outline: none;
+      }
+    }
+
+    button{
+      background-color: $col-pri;
+      border: 1px solid $col-sec;
+      border-radius: 0 12px 12px 0;
+      box-sizing: border-box;
+      color: white;
+      font-weight: bold;
+      font-size: 1em;
+      height: 25px;
+      margin: 0;
+      width: 50px;
+    }
+  }
+}
